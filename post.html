@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width , initial-scale = 1.0">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+	<div class="header" id="header">
+		<div class="container">
+			<a href="index.html"><img class="logo" src="img/icons/logo.png"></a>
+			<ul>
+				<li class="activePage"><a href="blog.html">Блог</a></li>
+				<li><a href="#">Команда</a></li>
+				<li><a href="#">Партнеры</a></li>
+			</ul>
+<!--User-->
+			<div class="user">
+				<div class="exit">
+					<a><p>Стас</p>
+					<img src="img/icons/notmal.png" alt=""></a>
+				</div>
+				<div class="circle" data-message="true">
+					<div class="circle-child"><p></p></div>
+				</div>
+			</div>
+
+<!--Default-->
+			<div class="default">
+				<p><a  data-signup="true">Регистрация</a></p>
+				<p><a class="marBot" data-signin="true">Вход в аккаунт</a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+<!-- Message -->
+			<div class="defaultWindow" id="Message">
+				<span class="triangle"></span>
+				<h3 class="title">Уведомления</h3>
+				<div class="borederB"></div>
+				
+				<div class="messegBlock">
+					<table  border="0">
+						<tbody >
+							<tr>
+								<td class="paddingLT"><img src="img/user1.png"></td>
+								<td class="paddingRT">
+									<span><b>Роман Кичан</b></span> ответил на ваш комментарий к статье <b><span>«Мошенники на финансовых рынках...</span>»</b>
+								</td>
+							</tr>
+							<tr >
+							
+								<td></td>
+								<td class="paddingB">
+									<span class="colorDeta">11 февраля 2009 в 15:42</span>
+								</td>
+								
+							</tr>
+						</tbody>
+						<tbody >
+							<tr>
+								<td class="paddingLT"><img src="img/users2.png"></td>
+								<td class="paddingRT">
+									<span><b>Владимир Путин</b></span> ответил на ваш комментарий к статье <b><span>«Мошенники на финансовых рынках...</span>»</b>
+
+								</td>
+							</tr>
+							<tr >
+							
+								<td></td>
+								<td class="paddingB">
+									<span class="colorDeta">15 февраля 2009 в 13:35</span>
+								</td>
+								
+							</tr>
+						</tbody>
+						<tbody >
+							<tr>
+								<td class="paddingLT"><img src="img/user3.png"></td>
+								<td class="paddingRT">
+									<span><b>ФСБ России</b></span> ответил на ваш комментарий к статье <b><span>«Мошенники на финансовых рынках...</span>»</b>
+								</td>
+							</tr>
+							<tr >
+							
+								<td></td>
+								<td class="paddingB">
+									<span class="colorDeta">15 февраля 2009 в 19:49</span>
+								</td>
+								
+							</tr>
+						</tbody>
+						
+					</table>
+				</div>
+			</div>
+<!-- LogIn-->
+			<div class="defaultWindow" id="logIn">
+				<span class="triangle"></span>
+				<h3 class="title">Войти в аккаунт</h3>
+				<div class="borederB"></div>
+				
+			
+				<form class="registr-form">
+					<table>
+						<tr>
+							<td><p>E-mail:</p></td>
+							<td><input maxlength="25"  name="login" class="border-red">
+								<div class="container-small">
+									<small class="small">Введен не верный e-mail</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   		<tr>
+							<td><p>Пароль:</p></td>
+							<td>
+								<input maxlength="25"  name="password" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Введен не верный пароль</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   </table>
+	  			</form>
+	  			<div class="chackBox">
+					<input type="checkbox" name="remember" id='remember'>
+					<label for="remember">Запомнить меня<br></label>
+				</div>
+				<div class="button"><a href="#">Войти в аккаунт</a></div>
+			</div>
+		
+<!--Registration-->
+			<div class="defaultWindow" id="registration" >
+				<span class="triangle"></span>
+				<h3 class="title">Регистрация</h3>
+				<div class="borederB"></div>
+				
+			
+				<form id="regForm" class="registr-form">
+					<table>
+						<tr>
+							<td><p>Имя</p></td>
+							<td><input maxlength="25"  name="login" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Заполните поле</small>
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td><p>Фамилия</p></td>
+							<td><input maxlength="25"  name="login" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Заполните поле</small>
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td><p>E-mail:</p></td>
+							<td><input maxlength="25"  name="login" class="border-red">
+								<div class="container-small">
+									<small class="small">Введен не верный e-mail</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   		<tr>
+							<td><p>Пароль:</p></td>
+							<td>
+								<input maxlength="25"  name="password" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Введен не верный пароль</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   </table>
+				   <div class="chackBox">
+						<input type="checkbox" name="EgryBoxReg" id='EgryReg'>
+						<label for="EgryReg">Согласен на обработку <a href="#">персональных данных</a><br></label>
+					</div>
+					<div class="button" onclick="SuccessfulReg()"><a href="#">Войти в аккаунт</a></div>
+	  			</form>
+
+	  			<div id="ShowRegText"  class="successfulReg">
+	  				<p>Поздравляем,<br>
+					Регистрация прошла<br>
+					успешно!</p>
+	  			</div>
+	  			
+			</div>
+		
+		<!--Cookie>-->
+			<div class="cookie" id="cookie">
+				<h3>Cookie-файлы <img onclick="ShowCookie()" class="imgRight" src="img/icons/close.png"></h3>
+				<p>На сайте Invest Profile используются cookie-файлы и другие аналогичные технологии. Если, прочитав это сообщение, вы остаетесь на нашем сайте, это означает, что вы не возражаете против использования этих технологий.</p>
+				<div class="btnContainer">
+					<div class="button4 ">Хорошо</div>
+					<div class="button4 marginL">Подробнее</div>
+				</div>
+			</div>
+		<a class="UpBtn"><i class="fas fa-angle-up"></i><!--img src="img/icons/up.png"--></a>
+		
+		<div class="post ">
+			<div class="container">
+				<div class="post_header poster">
+					<p>
+						<span id="date">25 марта 2015</span><span id="author"><img  src="img/user1.png">Роман Кичан</span>
+						<span id="views"><img src="img/icons/eye.png">999 999</span><span id="comments"><img src="img/icons/massage.png">999 999</span>
+					</p>
+						<img class="imgWidth"  src="img/poster1.png">
+						<h1>Мошенники на финансовых рынках, как определить и уберечься при желании инвестировать?</h1>
+						<div class="likely likely-light likely-big ya-share2">
+						  <div class="twitter box"></div>
+						  <div class="facebook box"></div>
+						  <div class="vkontakte box"></div>
+						</div>
+						<div class="ya-share2" data-services="vkontakte,facebook,gplus,twitter,linkedin,viber,whatsapp,skype,telegram">
+							
+						</div>
+				</div>
+				<div class="postText">
+					<img src="img/coma.png" alt=""><h1 class="text-right">«Если у Вас есть возможность инвестировать, найдутся те, кто потенциально хочет присвоить ваши средства себе!»
+					</h1>
+					</br>
+					</br>
+					<p>
+						Будьте внимательны и запоминайте!</br></br>
+
+						Разбираем сегодня реальные инструменты поведения и лайфхаки  для защиты от финансовых мошенников.</br></br>
+
+						Я четырнадцать лет работаю в инвестиционных компаниях, и знаю все нюансы управления чужими финансами. Гарантирую, что применяя эти инструменты, вы перестанете быть интересны мошенникам.</br></br>
+
+						В конце статьи будет алгоритм, напоминающий как вести себя при разного рода звонках. Количество пострадавших от финансовых мошенников очень и очень много. Мы знаем из телевизора о тысячах обманутых вкладчиков, но мало что слышал об инвестициях, которые люди теряют, благодаря коварству мошенников или собственной нерасчетливости.</br></br>
+						 
+						Мошенники на финансовых рынках существуют с самого рождения самих рынков, как только появилось такое слово, как «ДОВЕРИЕ». Ведь финансовые рынки -  это в первую очередь сделки, где стороны доверяют друг другу. Тут сразу и стал появляться «первый снег». Индивиды,  которые понимают, что если завладеть доверием другой стороны, то можно неплохо заработать в денежных знаках.</br></br>
+
+						Рассмотрим сегодняшние кейсы.</br>
+
+					</p>
+					</br>
+					</br>
+					<h2>
+						КЕЙС 1.</br>
+						Классическая схема отъема денежных средств у доверчивых граждан под “соусом” финансовых рынков.
+
+					</h2></br>
+					<h3>Как это происходит?</h3>
+					<p>
+						Нам на телефон звонит менеджер незнакомой нам финансовой компании и предлагает заработать много денег с помощью него и его компании. Очень хорошо говорит, уверенно и вроде имеет определенную экспертизу. Ну а как иначе? Он звонит по 70 звонков в день! Много дней.</br></br>
+
+						Как работают? Просто.</br></br>
+
+						Используют психологические практики влияния на людей.</br></br>
+
+						Вот собственно описание их Целевой аудитории:</br>
+					</p>
+					<ul class="styleList">
+						<li>Человек, зарабатывающий около 100К рублей в месяц;</li>
+						<li>Данный человек  считает себя изрядно умным, часто обосновано;</li>
+						<li>Он уверен, что он никогда не попадет в лапы финансовых мошенников, так как он контролирует всю ситуацию. Ему дают такой контроль. То есть эту иллюзию, которая рассыпается после разворота рынка (как ему твердят);</li>
+						<li>У этого человека есть мечта, как и у многих руководителей или собственников бизнеса. Всю текущую операционную работу делают «специально обученные люди на зарплате»;</li>
+						<li>Сам занимаешься только ребалансировкой портфеля и основными потоками. Изучает регулярные отчеты, которые ему поставляют, а он уже выбирает из условий : «хорошо» и «плохо». А прибыль достигается заранее придуманному плану. 50% не нужно, достаточно 30% в месяц с меньшим риском.</li>
+					</ul>
+					</br>
+					<p >И все это ему букетом и предоставляют.</br></br>
+					
+						Более деятельные и умные со здравым смыслом начинают изучать документы и находить в логике дыры, и отказывают мошенникам, у остальных итог известен.</br></br>
+
+						Алгоритм простой:
+					</p>
+					<ul class="styleList">
+						<li>Позвонят;</li>
+						<li>Затянут к себе в офис;</li>
+						<li>Покажут офис, телевизоры, графики. Будет и кофе и вино если нужно;</li>
+						<li>Заключите договор;</li>
+						<li>Отправите деньги.</li>
+					</ul>
+					</br>
+					<p>И все, больше Вы своих денег не увидите.</p>
+					</br></br></br>
+					<img src="img/coma.png" alt=""><h1 class="text-right">«Как определить, что Вам звонит мошенник или реальные профессионалы с финансовой индустрии?»
+					</h1></br></br></br>
+					<h2>Действуем так:</br></br>
+					Инструмент (заучить наизусть и начинать применять при первом же случае такого звонка).
+					</h2>
+					<p>Роли</p>
+					<ul class="styleList">
+						<li>Менеджер;</li>
+						<li>Вы</li>
+					</ul></br></br>
+					<p>Примерный диалог:</p>
+				</div>
+				<div class="dialog" onclick="popUp(this)">
+					<img class="popup" src="img/poster.png">
+				</div>
+				<div class="postText">
+					<p>Все! Этого вполне достаточно для того, что бы собеседник начал думать и сомневаться в своих мероприятиях по захвату Ваших денег. Если это мошенник молодой, неопытный то, скорее всего он закончит разговор, так как на бумаге в скрипте нет такой информации.</br></br>
+					Лучший исход мошенника по телефонному звонку – это встреча с Вами, а к записям разговора их не готовили.
+					У меня в смартфоне есть такая возможность, как запись телефонных разговоров. Установите себе такое программное обеспечение и тоже пользуйтесь. Ведь это в целях Вашей же безопасности.</br></br>
+
+					Если звонящий продолжает разговор?</br></br>
+
+					В конце статьи я подготовил защитный алгоритм, который сам использую при таких звонках.
+					Отправьте его Вашим друзьям и близким. Распечатайте его и повесьте на стену в офис для Ваших сотрудников. Защищаться нужно уметь всем.
+					</p></br></br>
+					<h2>КЕЙС 2.</br>
+					Нам пишет какой – то незнакомый человек в социальных сетях.</h2></br>
+
+					<h3>Как это происходит?</h3>
+					<p>Нам начал писать в социальных сетях неизвестный нам гражданин. Так же обещает сделать нас богатыми и успешными: мол, они уже научились и хотят научить вас.  
+					Можно даже не вступать с ним в переписку, а попросить, чтобы он позвонил вам. Дальше мы уже умеем с ними общаться – возвращаемся в КЕЙС 1.
+					</p></br></br>
+					<h2>КЕЙС 3</h2>
+				</div>
+				<div class="video">
+					<iframe  width="100%" height="100%" src="https://www.youtube.com/embed/SnQkTfSpfOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="postText">
+					<h2>КЕЙС 4</h2></br>
+					<h2>Подведем итоги</h2>
+					<p>
+					Важно запомнить! Никогда не встречайтесь с людьми, которые вам что–то хотят продать на финансовых рынках от неизвестных компаний.</br>
+					Обязательно после звонка изучите вопрос самостоятельно. Потратьте свое время сейчас, чтобы не потерять деньги в последующем. </br>
+					Только после глубокого анализа предложения, имея полную уверенность в том, что предложение поступило от реальной рыночной компании (т. е.компания имеет историю, лицензии и физический офис) можно продолжать общение.</br></br>					 
+					Алгоритм Вашей защиты:
+					</p>
+					<ul class="styleList">
+						<li>Применяем инструмент «Ваш звонок записывается»;</li>
+						<li>Анализируем домены компаний на сервисе типа Who is;</li>
+						<li>Поиск возможных реальных отзывов в интернете (они отличаются от остальных);</li>
+						<li>Интересуемся у своих знакомых;</li>
+						<li>Изучаем компанию;</li>
+						<li>Принимаем решение о дальнейшем взаимодействии с компанией.</li>
+					</ul>
+				</div>
+
+				<div class="dialog" onclick="popUp(this)" >
+					<img class="popup" src="img/poster.png" >
+				</div>
+				<div class="postText">
+					<p>Если хотите, чтобы проверку предложения провела независимая компания,  обратитесь к нам. Мы профессионально занимаемся […]</p></br></br>
+					<h3>Что мы будем делать и как помогать Вам?</h3></br>
+					<p>
+						На главной странице нашего сайта <a class="link" href="">www.invest–profile.ru</a>  есть кнопка – Нужна помощь. Далее заполняете поля, это совсем не сложно.</br></br>
+
+						Мы в свою очередь создадим официальное письмо в эту компанию (может даже и не придётся создавать письмо, а удастся просто опереться на опыт) с определенным блоком вопросов (это классические вопросы, ответы на которые позволяют принимать решения инвестору при выборе компании).</br></br>
+
+						Получив ответ на наше письмо, мы проанализируем ответы и сообщим вам наше экспертное мнение: инвестировали бы мы через такого поставщика услуг или нет, и почему. Расскажем, какие последствия может повлечь за собой инвестирование через такую компанию.</br></br>
+
+						Делать это мы будем бесплатно. Для нас это не составит труда, а повышение финансовой грамотности наших близких — часть миссии нашей компании.</br></br>
+					</p>
+
+					<ul class="heshtegMenu">
+						<li><a class="link" href="">#Мир</a></li>
+						<li><a class="link" href="">#Труд</a></li>
+						<li><a class="link" href="">#Май</a></li>
+						<li><a class="link" href="">#Ленин</a></li>
+						<li><a class="link" href="">#СССР</a></li>
+						<li><a class="link" href="">#Коммунизм</a></li>
+						<li><a class="link" href="">#Сталин</a></li>
+						<li><a class="link" href="">#КарлМаркс</a></li>
+					</ul>
+				</div>
+				<div class="postText postTextBottom">
+					<h3>Статьи по теме:</h3>
+					<div class="postTextBottom_box">
+						<a class="link">Карта выбора финансовых-инвестиционных продуктов</a></br>
+						<span id="date">11 февраля 2009</span>
+					</div>
+					<div class="postTextBottom_box">
+						<a class="link">Разбираем Доверительного управляющего (ДУ)</a></br>
+						<span id="date">Вчера в 13:15</span>
+					</div>
+					<div class="postTextBottom_box">
+						<a class="link">Разбираем Брокера</a></br>
+						<span id="date">Сегодня в 02:23</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footter">
+				<div class="content_Box">
+					<div class="logoBootomMax">
+						<img src="img/icons/logo2.png" class="leftimg">
+						<p>
+							Консалтинговая компания<br>
+							ООО «Инвест-профайл»<br>
+							© 2016-2018 год<br>
+						</p>
+					</div>
+					<ul>
+						<li>
+							Телефон: 8 800 301 2406<br>
+							E-mail: <a href="">info@invest-profile.ru</a> <br>
+						</li>
+						<li>
+							<a>Политика обработки<br>
+							персональных данных <br></a>
+						</li>
+						<li>
+							<a>Пользовательское<br>
+							соглашение <br></a>
+						</li>
+					</ul>
+					<div class="logoBootomMini">
+							<img src="img/icons/logo2.png" class="leftimg">
+							<p>
+								Консалтинговая компания<br>
+								ООО «Инвест-профайл»<br>
+								© 2016-2018 год<br>
+							</p>
+					</div>
+					<div class="iconsBootom">
+							<p>	Мы в социальных сетях:</p>
+							<img src="img/icons/telegram.png" onmouseover="SetImg(this,'telegram')" onmouseout="RemoveImg(this,'telegram')">
+							<img src="img/icons/faleboock.png"  onmouseover="SetImg(this,'faleboock')"  onmouseout="RemoveImg(this,'faleboock')">
+							<img src="img/icons/vk.png" onmouseover="SetImg(this,'vk')" onmouseout="RemoveImg(this,'vk')">
+							<img src="img/icons/youtube.png" onmouseover="SetImg(this,'youtube')" onmouseout="RemoveImg(this,'youtube')">	
+					</div>
+					<div class="clear"></div>
+					
+					<div class="bottomText">
+						<div class="bottomText_box">
+							<img src="img/icons/attention.png">
+						</div>
+						 <p>Напоминаем Вам и просим быть предельно внимательными при инвестировании на финансовые рынки! Данные мероприятия несут в себе риски потери инвестированных средств, как частично, так и полностью. Инвестировать необходимо осознано и через лицензированных поставщиков финансовых услуг.</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+		</div>
+
+	<script src="js/likely.js"></script>
+	<script src="js/main.js"></script>
+	<!--<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+	<script src="https://yastatic.net/share2/share.js"></script>-->
+</body>
+</html>

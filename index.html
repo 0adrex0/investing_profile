@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width , initial-scale = 1.0">
+</head>
+<body>
+	<button onclick="test1()">Test</button>
+		<div class="header" id="header">
+			<div class="container">
+				<a href="index.html"><img class="logo" src="img/icons/logo.png"></a>
+				<ul>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="#">Команда</a></li>
+					<li><a href="#">Партнеры</a></li>
+				</ul>
+	<!--User-->
+				<div class="user">
+					<div class="exit">
+						<a><p>Стас</p>
+						<img src="img/icons/notmal.png" alt=""></a>
+					</div>
+					<div class="circle" data-message="true">
+						<div class="circle-child"><p></p></div>
+					</div>
+				</div>
+
+	<!--Default-->
+				<div class="default">
+					<p><a  data-signup="true">Регистрация</a></p>
+					<p><a class="marBot" data-signin="true">Вход в аккаунт</a></p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+<!-- Message -->
+			<div class="defaultWindow" id="Message">
+				<span class="triangle"></span>
+				<h3 class="title">Уведомления</h3>
+				<div class="borederB"></div>
+				
+				<div class="messegBlock">
+					<table  border="0">
+						<tbody >
+							<tr>
+								<td class="paddingLT"><img src="img/user1.png"></td>
+								<td class="paddingRT">
+									<span><b>Роман Кичан</b></span> ответил на ваш комментарий к статье <b><span>«Мошенники на финансовых рынках...</span>»</b>
+								</td>
+							</tr>
+							<tr >
+							
+								<td></td>
+								<td class="paddingB">
+									<span class="colorDeta">11 февраля 2009 в 15:42</span>
+								</td>
+								
+							</tr>
+						</tbody>
+						<tbody >
+							<tr>
+								<td class="paddingLT"><img src="img/users2.png"></td>
+								<td class="paddingRT">
+									<span><b>Владимир Путин</b></span> ответил на ваш комментарий к статье <b><span>«Мошенники на финансовых рынках...</span>»</b>
+
+								</td>
+							</tr>
+							<tr >
+							
+								<td></td>
+								<td class="paddingB">
+									<span class="colorDeta">15 февраля 2009 в 13:35</span>
+								</td>
+								
+							</tr>
+						</tbody>
+						<tbody >
+							<tr>
+								<td class="paddingLT"><img src="img/user3.png"></td>
+								<td class="paddingRT">
+									<span><b>ФСБ России</b></span> ответил на ваш комментарий к статье <b><span>«Мошенники на финансовых рынках...</span>»</b>
+								</td>
+							</tr>
+							<tr >
+							
+								<td></td>
+								<td class="paddingB">
+									<span class="colorDeta">15 февраля 2009 в 19:49</span>
+								</td>
+								
+							</tr>
+						</tbody>
+						
+					</table>
+				</div>
+			</div>
+<!-- LogIn-->
+			<div class="defaultWindow" id="logIn">
+				<span class="triangle"></span>
+				<h3 class="title">Войти в аккаунт</h3>
+				<div class="borederB"></div>
+				
+			
+				<form class="registr-form">
+					<table>
+						<tr>
+							<td><p>E-mail:</p></td>
+							<td><input maxlength="25"  name="login" class="border-red" onkeypress="">
+								<div class="container-small">
+									<small class="small">Введен не верный e-mail</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   		<tr>
+							<td><p>Пароль:</p></td>
+							<td>
+								<input maxlength="25"  name="password" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Введен не верный пароль</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   </table>
+	  			</form>
+	  			<div class="chackBox">
+					<input type="checkbox" name="remember" id='remember'>
+					<label for="remember">Запомнить меня<br></label>
+				</div>
+				<div class="button"><a href="#">Войти в аккаунт</a></div>
+			</div>
+		
+<!--Registration-->
+			<div class="defaultWindow" id="registration" >
+				<span class="triangle"></span>
+				<h3 class="title">Регистрация</h3>
+				<div class="borederB"></div>
+				
+			
+				<form id="regForm" class="registr-form">
+					<table>
+						<tr>
+							<td><p>Имя</p></td>
+							<td><input maxlength="25"  name="login" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Заполните поле</small>
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td><p>Фамилия</p></td>
+							<td><input maxlength="25"  name="login" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Заполните поле</small>
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td><p>E-mail:</p></td>
+							<td><input maxlength="25"  name="login" class="border-red">
+								<div class="container-small">
+									<small class="small">Введен не верный e-mail</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   		<tr>
+							<td><p>Пароль:</p></td>
+							<td>
+								<input maxlength="25"  name="password" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Введен не верный пароль</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   </table>
+				   <div class="chackBox">
+						<input type="checkbox" name="EgryBoxReg" id='EgryReg'>
+						<label for="EgryReg">Согласен на обработку <a href="#">персональных данных</a><br></label>
+					</div>
+					<div class="button" onclick="SuccessfulReg()"><a href="#">Войти в аккаунт</a></div>
+	  			</form>
+
+	  			<div id="ShowRegText"  class="successfulReg">
+	  				<p>Поздравляем,<br>
+					Регистрация прошла<br>
+					успешно!</p>
+	  			</div>
+	  			
+			</div>
+		<div class="block1">
+			<div class="container">
+				<h1>Ваш Инвестиционный профиль</h1>
+				<h2>Безопасный старт на инвестиционном рынке</h2>
+				<div class="button2" onmouseover="SetImg(this,'rocket')" onmouseout="RemoveImg(this,'rocket')">
+					<img src="img/icons/rocket.png"> 
+					<p>Старт</p>
+				</div>
+			</div>
+		</div>
+		<!--Cookie>-->
+			<div class="cookie" id="cookie">
+				<h3>Cookie-файлы <img onclick="ShowCookie()" class="imgRight" src="img/icons/close.png"></h3>
+				<p>На сайте Invest Profile используются cookie-файлы и другие аналогичные технологии. Если, прочитав это сообщение, вы остаетесь на нашем сайте, это означает, что вы не возражаете против использования этих технологий.</p>
+				<div class="btnContainer">
+					<div class="button4 ">Хорошо</div>
+					<div class="button4 marginL">Подробнее</div>
+				</div>
+			</div>
+		<a class="UpBtn"><i class="fas fa-angle-up"></i><!--img src="img/icons/up.png"--></a>
+		<div class="block2">
+			<div class="container">
+				<div class="block2_Card1">
+					<h2>О чем речь?</h2>
+					<h3>Мы разработали тест для определения вашего инвестиционного профиля. Результат тест поможет вам правильно выбрать продукты на рынке ценных бумаг сответствующие вашему риск профилю.</h3>
+					<p class="block2_Card1-text">Что вы получите после прохождения теста?</p>
+					<ul>
+					    <li><p>Узнаете свой болевой порог риска;</p></li>
+					    <li><p>Приобретете положительный опыт, а не отрицательный (только проверенные компании);</p></li>
+					    <li><p>Действительно лучшие продукты для Вас;</p></li>
+					    <li><p>Максимально обезопасите себя на рынке инвестиций.</p></li>
+					</ul>
+				</div>
+				<div class="block2_Card2">
+					<h1>Кому необходим</br> Инвестиционный профиль?</h1>
+					<ul>
+						<li>
+							<div class="box">
+							<img src="img/3.png" alt="">
+							</div>
+							<p>Новичку на финансовых рынках</p>
+						</li>
+						<li>
+							<div class="box">
+								<img src="img/2.png" alt="">
+							</div>
+							<p>Опытному инвестору</p>
+						</li>
+						<li>
+							<div class="box">
+								<img src="img/4.png" alt="">
+							</div>
+							<p>Разочарованные в финансовых рынках</p>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="block3">
+			<div class="container">
+				<h1>One more thing...</h1>
+				<h2>Кэшбэк комиссий <br>со сделок! </h2>
+				<p>Вы инвестируете, часть<br>
+					комиссий Вам возвращается.<br> 
+				</p>
+				<p>
+					Возврат комиссий пока<br>
+					Ваши деньги работают. <br>
+				</p>
+				<div class="button3" id="video">Подробнее</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="block4">
+					<h1>Отчего зависит успешность инвестора на финансовых рынках?</h1>
+					<p>
+						<img  src="img/6.png"  class="imgWidthMin leftimg">
+						Успешность инвестора напрямую зависит от знания своего Инвестиционного профиля. Ведь результатом инвестиций может быть не только прибыль, но и при поспешных и не обдуманных шагах возможны сокращения доходов и даже убытки. Имея на руках свой Инвестиционный Профиль, инвестор заранее оберегает себя от большинства возможных рисков при инвестировании.
+
+					</p>
+					<div class="clear"></div>
+				</div>
+		</div>
+		<div class="footter">
+				<div class="content_Box">
+					<div class="logoBootomMax">
+						<img src="img/icons/logo2.png" class="leftimg">
+						<p>
+							Консалтинговая компания<br>
+							ООО «Инвест-профайл»<br>
+							© 2016-2018 год<br>
+						</p>
+					</div>
+					<ul>
+						<li>
+							Телефон: 8 800 301 2406<br>
+							E-mail: <a href="">info@invest-profile.ru</a> <br>
+						</li>
+						<li>
+							<a>Политика обработки<br>
+							персональных данных <br></a>
+						</li>
+						<li>
+							<a>Пользовательское<br>
+							соглашение <br></a>
+						</li>
+					</ul>
+					<div class="logoBootomMini">
+							<img src="img/icons/logo2.png" class="leftimg">
+							<p>
+								Консалтинговая компания<br>
+								ООО «Инвест-профайл»<br>
+								© 2016-2018 год<br>
+							</p>
+					</div>
+					<div class="iconsBootom">
+							<p>	Мы в социальных сетях:</p>
+							<img src="img/icons/telegram.png" onmouseover="SetImg(this,'telegram')" onmouseout="RemoveImg(this,'telegram')">
+							<img src="img/icons/faleboock.png"  onmouseover="SetImg(this,'faleboock')"  onmouseout="RemoveImg(this,'faleboock')">
+							<img src="img/icons/vk.png" onmouseover="SetImg(this,'vk')" onmouseout="RemoveImg(this,'vk')">
+							<img src="img/icons/youtube.png" onmouseover="SetImg(this,'youtube')" onmouseout="RemoveImg(this,'youtube')">	
+					</div>
+					<div class="clear"></div>
+					
+					<div class="bottomText">
+						<div class="bottomText_box">
+							<img  src="img/icons/attention.png">
+						</div>
+						 <p >Напоминаем Вам и просим быть предельно внимательными при инвестировании на финансовые рынки! Данные мероприятия несут в себе риски потери инвестированных средств, как частично, так и полностью. Инвестировать необходимо осознано и через лицензированных поставщиков финансовых услуг.</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+		</div>
+
+
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>

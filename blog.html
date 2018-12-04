@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<meta name="viewport" content="width=device-width , initial-scale = 1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+	<div class="header" id="header">
+		<div class="container">
+			<a href="index.html"><img class="logo" src="img/icons/logo.png"></a>
+			<ul>
+				<li class="activePage"><a href="blog.html">Блог</a></li>
+				<li><a href="#">Команда</a></li>
+				<li><a href="#">Партнеры</a></li>
+			</ul>
+<!--User-->
+			<div class="user">
+				<div class="exit">
+					<a><p>Стас</p>
+					<img src="img/icons/notmal.png" alt=""></a>
+				</div>
+				<div class="circle" data-message="true">
+					<div class="circle-child"><p></p></div>
+				</div>
+			</div>
+
+<!--Default-->
+			<div class="default">
+				<p><a  data-signup="true">Регистрация</a></p>
+				<p><a class="marBot" data-signin="true">Вход в аккаунт</a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+<!-- Message -->
+			<div class="defaultWindow" id="Message">
+				<span class="triangle"></span>
+				<h3 class="title">Уведомления</h3>
+				<div class="borederB"></div>
+				
+				<div class="messegBlock">
+					<table  border="0">
+						<tbody >
+							<tr>
+								<td class="paddingLT"><img src="img/user1.png"></td>
+								<td class="paddingRT">
+									<span><b>Роман Кичан</b></span> ответил на ваш комментарий к статье <b><span>«Мошенники на финансовых рынках...</span>»</b>
+								</td>
+							</tr>
+							<tr >
+							
+								<td></td>
+								<td class="paddingB">
+									<span class="colorDeta">11 февраля 2009 в 15:42</span>
+								</td>
+								
+							</tr>
+						</tbody>
+						<tbody >
+							<tr>
+								<td class="paddingLT"><img src="img/users2.png"></td>
+								<td class="paddingRT">
+									<span><b>Владимир Путин</b></span> ответил на ваш комментарий к статье <b><span>«Мошенники на финансовых рынках...</span>»</b>
+
+								</td>
+							</tr>
+							<tr >
+							
+								<td></td>
+								<td class="paddingB">
+									<span class="colorDeta">15 февраля 2009 в 13:35</span>
+								</td>
+								
+							</tr>
+						</tbody>
+						<tbody >
+							<tr>
+								<td class="paddingLT"><img src="img/user3.png"></td>
+								<td class="paddingRT">
+									<span><b>ФСБ России</b></span> ответил на ваш комментарий к статье <b><span>«Мошенники на финансовых рынках...</span>»</b>
+								</td>
+							</tr>
+							<tr >
+							
+								<td></td>
+								<td class="paddingB">
+									<span class="colorDeta">15 февраля 2009 в 19:49</span>
+								</td>
+								
+							</tr>
+						</tbody>
+						
+					</table>
+				</div>
+			</div>
+<!-- LogIn-->
+			<div class="defaultWindow" id="logIn">
+				<span class="triangle"></span>
+				<h3 class="title">Войти в аккаунт</h3>
+				<div class="borederB"></div>
+				
+			
+				<form class="registr-form">
+					<table>
+						<tr>
+							<td><p>E-mail:</p></td>
+							<td><input maxlength="25"  name="login" class="border-red">
+								<div class="container-small">
+									<small class="small">Введен не верный e-mail</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   		<tr>
+							<td><p>Пароль:</p></td>
+							<td>
+								<input maxlength="25"  name="password" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Введен не верный пароль</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   </table>
+	  			</form>
+	  			<div class="chackBox">
+					<input type="checkbox" name="remember" id='remember'>
+					<label for="remember">Запомнить меня<br></label>
+				</div>
+				<div class="button"><a href="#">Войти в аккаунт</a></div>
+			</div>
+		
+<!--Registration-->
+			<div class="defaultWindow" id="registration" >
+				<span class="triangle"></span>
+				<h3 class="title">Регистрация</h3>
+				<div class="borederB"></div>
+				
+			
+				<form id="regForm" class="registr-form">
+					<table>
+						<tr>
+							<td><p>Имя</p></td>
+							<td><input maxlength="25"  name="login" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Заполните поле</small>
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td><p>Фамилия</p></td>
+							<td><input maxlength="25"  name="login" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Заполните поле</small>
+								</div>
+							</td>	
+						</tr>
+						<tr>
+							<td><p>E-mail:</p></td>
+							<td><input maxlength="25"  name="login" class="border-red">
+								<div class="container-small">
+									<small class="small">Введен не верный e-mail</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   		<tr>
+							<td><p>Пароль:</p></td>
+							<td>
+								<input maxlength="25"  name="password" class="defoult-border">
+								<div class="container-small">
+									<small class="small hide-block">Введен не верный пароль</small>
+								</div>
+							</td>	
+						</tr>
+						
+				   </table>
+				   <div class="chackBox">
+						<input type="checkbox" name="EgryBoxReg" id='EgryReg'>
+						<label for="EgryReg">Согласен на обработку <a href="#">персональных данных</a><br></label>
+					</div>
+					<div class="button" onclick="SuccessfulReg()"><a href="#">Войти в аккаунт</a></div>
+	  			</form>
+
+	  			<div id="ShowRegText"  class="successfulReg">
+	  				<p>Поздравляем,<br>
+					Регистрация прошла<br>
+					успешно!</p>
+	  			</div>
+	  			
+			</div>
+		
+		<!--Cookie>-->
+			<div class="cookie" id="cookie">
+				<h3>Cookie-файлы <img onclick="ShowCookie()" class="imgRight" src="img/icons/close.png"></h3>
+				<p>На сайте Invest Profile используются cookie-файлы и другие аналогичные технологии. Если, прочитав это сообщение, вы остаетесь на нашем сайте, это означает, что вы не возражаете против использования этих технологий.</p>
+				<div class="btnContainer">
+					<div class="button4 ">Хорошо</div>
+					<div class="button4 marginL">Подробнее</div>
+				</div>
+			</div>
+		<a class="UpBtn"><i class="fas fa-angle-up"></i><!--img src="img/icons/up.png"--></a>
+		
+		<div class="blog" id="blog">
+			<div class="container">
+
+				<div class="column-left">
+					<div class="poster">
+							<a href="post.html">
+								<p>
+									<span id="date">25 марта 2015</span><span id="author"><img  src="img/user1.png">Роман Кичан</span><br>
+									<span id="views"><img src="img/icons/eye.png">999 999</span><span id="comments"><img src="img/icons/massage.png">999 999</span>
+								</p>
+								<img class="imgWidth" src="img/poster1.png">
+								<h1>Мошенники на финансовых рынках, как определить и уберечься при желании инвестировать?</h1>
+							</a>
+					</div>
+					<div class="poster">
+						<p>
+							<span id="date">5 апреля 2015</span><span id="author"><img  src="img/user1.png">Роман Кичан</span><br>
+							<span id="views"><img src="img/icons/eye.png">999 999</span><span id="comments"><img src="img/icons/massage.png">999 999</span>
+						</p>
+						<img class="imgWidth" src="img/poster2.png">
+						<h1>Возможные риски на фондовом рынке</h1>
+					</div>
+					<div class="poster">
+						<p>
+							<span id="date">5 апреля 2015</span><span id="author"><img  src="img/user1.png">Роман Кичан</span><br>
+							<span id="views"><img src="img/icons/eye.png">999 999</span><span id="comments"><img src="img/icons/massage.png">999 999</span>
+						</p>
+						<img class="imgWidth" src="img/poster3.png">
+						<h1>Возможные риски на фондовом рынке</h1>
+					</div>
+					<div class="poster">
+						<p>
+							<span id="date">5 апреля 2015</span><span id="author"><img  src="img/user1.png">Роман Кичан</span><br>
+							<span id="views"><img src="img/icons/eye.png">999 999</span><span id="comments"><img src="img/icons/massage.png">999 999</span>
+						</p>
+						<img class="imgWidth" src="img/poster4.png">
+						<h1>Как подобрать управляющую компанию?</h1>
+					</div>
+					<div class="poster">
+						<p>
+							<span id="date">5 апреля 2015</span><span id="author"><img  src="img/user1.png">Роман Кичан</span><br>
+							<span id="views"><img src="img/icons/eye.png">999 999</span><span id="comments"><img src="img/icons/massage.png">999 999</span>
+						</p>
+						<img class="imgWidth" src="img/poster5.png">
+						<h1>Доверительное управление изнутри</h1>
+					</div>
+					<div class="blog_button">
+						<p>Загрузить еще</p>
+					</div>
+				</div>
+
+				<div class="column-right">
+					<div class="wrapper">
+						<div class="bestThemes">
+							<h3>Популярные темы</h3>
+							<ul>
+								<li><a href="">#Мир</a></li>
+								<li><a href="">#Труд</a></li>
+								<li><a href="">#Май</a></li>
+								<li><a href="">#Ленин</a></li>
+								<li><a href="">#Коммунизм</a></li>
+								<li><a href="">#СССР</a></li>
+								<li><a href="">#Сталин</a></li>
+								<li><a href="">#КарлМаркс</a></li>	
+									
+							</ul>
+						</div>
+						<div class="bestPost">
+							<h3>Лучшие статьи за неделю</h3>
+							<ul>
+								<li>
+									<a href="">Карта выбора финансовых-инвестиционных продуктов</a></br>
+									<span>11 февраля 2009</span>
+								</li>
+								<li>
+									<a href="">Разбираем Доверительного управляющего (ДУ)</a></br>
+									<span>Вчера в 13:15</span>
+								</li>
+								<li>
+									<a href="">Разбираем Брокера</a></br>
+									<span>Сегодня в 02:23</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="footter">
+				<div class="content_Box">
+					<div class="logoBootomMax">
+						<img src="img/icons/logo2.png" class="leftimg">
+						<p>
+							Консалтинговая компания<br>
+							ООО «Инвест-профайл»<br>
+							© 2016-2018 год<br>
+						</p>
+					</div>
+					<ul>
+						<li>
+							Телефон: 8 800 301 2406<br>
+							E-mail: <a href="">info@invest-profile.ru</a> <br>
+						</li>
+						<li>
+							<a>Политика обработки<br>
+							персональных данных <br></a>
+						</li>
+						<li>
+							<a>Пользовательское<br>
+							соглашение <br></a>
+						</li>
+					</ul>
+					<div class="logoBootomMini">
+							<img src="img/icons/logo2.png" class="leftimg">
+							<p>
+								Консалтинговая компания<br>
+								ООО «Инвест-профайл»<br>
+								© 2016-2018 год<br>
+							</p>
+					</div>
+					<div class="iconsBootom">
+							<p>	Мы в социальных сетях:</p>
+							<img src="img/icons/telegram.png" onmouseover="SetImg(this,'telegram')" onmouseout="RemoveImg(this,'telegram')">
+							<img src="img/icons/faleboock.png"  onmouseover="SetImg(this,'faleboock')"  onmouseout="RemoveImg(this,'faleboock')">
+							<img src="img/icons/vk.png" onmouseover="SetImg(this,'vk')" onmouseout="RemoveImg(this,'vk')">
+							<img src="img/icons/youtube.png" onmouseover="SetImg(this,'youtube')" onmouseout="RemoveImg(this,'youtube')">	
+					</div>
+					<div class="clear"></div>
+					
+					<div class="bottomText">
+						<div class="bottomText_box">
+							<img src="img/icons/attention.png">
+						</div>
+						 <p>Напоминаем Вам и просим быть предельно внимательными при инвестировании на финансовые рынки! Данные мероприятия несут в себе риски потери инвестированных средств, как частично, так и полностью. Инвестировать необходимо осознано и через лицензированных поставщиков финансовых услуг.</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+		</div>
+
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
